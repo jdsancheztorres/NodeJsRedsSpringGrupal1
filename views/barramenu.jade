@@ -1,0 +1,28 @@
+#barramenu
+  ul#side-menu.nav
+    li.sidebar-search
+      .input-group.custom-search-form
+        input.form-control(type='text', placeholder='Buscar...')
+        span.input-group-btn
+          button.btn.btn-default(type='button')
+            i.fa.fa-search
+    li
+      a(href="/")
+        i.fa.fa-dashboard.fa-fw
+        |                 Inicio
+    li
+      a(href='#')
+        i.fa.fa-bar-chart-o.fa-fw
+        | Administracion
+        |                 Negocio
+        span.fa.arrow
+      ul.nav.nav-second-level
+        li
+          a(href="/") Usuarios
+      ul.nav.nav-second-level
+        li
+          a(href="/") Cursos    
+    li
+      a(href="/")
+        i.fa.fa-dashboard.fa-fw
+        |                 Salir

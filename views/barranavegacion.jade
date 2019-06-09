@@ -1,0 +1,17 @@
+#barranavegacion
+  nav.navbar.navbar-default.navbar-static-top(role='navigation', style='margin-bottom: 0')
+    .navbar-header
+      button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='buscar.html') NodeJS Reds - 2019 v.0.1 - Bienvenido
+    ul.nav.navbar-top-links.navbar-right
+      include barranavegacionmensajes.jade
+      include barranavegaciontareas.jade
+      include barranavegacionnotificaciones.jade
+      include barranavegacionusuario.jade
+    .navbar-default.sidebar(role='navigation')
+      .sidebar-nav.navbar-collapse
+        include barramenu.jade
