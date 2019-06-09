@@ -1,0 +1,34 @@
+extends ../../common/base.jade
+block tituloEncabezado 
+	Buscar Curso
+block migadepain1 
+	Administracion
+block migadepain2 
+	Cursos
+block titulo1 
+	Curso
+block titulo2 
+	Listar Cursos
+block contenido  
+    form#formulario(action="/curso/guardar", method='POST', name='formulario', enctype='multipart/form-data')
+    table(border='0', width='80%', align='center')
+        tbody
+        tr
+            td
+            label Nombre
+            td
+            input#nombre.form-control(type='text', name='cedula')
+        tr
+            td
+            label Intensidad Horaria
+            td
+            input#intensidad.form-control(type='text', name='nombre')
+        tr
+            td
+            label Apellido
+            td
+            input#apellido.form-control(type='text', name='apellido')
+    br
+    center
+        input.btn.btn-primary(type='submit', value='Guardar')
+        a.btn.btn-primary(href="/") Cancelar

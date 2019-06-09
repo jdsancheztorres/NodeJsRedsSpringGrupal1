@@ -1,0 +1,34 @@
+extends ../../common/base.jade
+block tituloEncabezado 
+	Ingresar Usuario
+block migadepain1 
+	Administracion
+block migadepain2 
+	Usuarios
+block titulo1 
+	Usuario
+block titulo2 
+	Listar Usuarios
+block contenido  
+    form#formulario(action="/usuario/guardar", method='POST', name='formulario', enctype='multipart/form-data')
+    table(border='0', width='80%', align='center')
+        tbody
+        tr
+            td
+            label Documento ID
+            td
+            input#identificacion.form-control(type='text', name='identificacion')
+        tr
+            td
+            label Nombre
+            td
+            input#nombre.form-control(type='text', name='nombre')
+        tr
+            td
+            label Correo Electronico
+            td
+            input#correo.form-control(type='text', name='correo')
+    br
+    center
+        input.btn.btn-primary(type='submit', value='Guardar')
+        a.btn.btn-primary(href="/") Cancelar

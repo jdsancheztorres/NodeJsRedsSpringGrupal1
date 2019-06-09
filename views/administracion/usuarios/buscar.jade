@@ -1,0 +1,33 @@
+extends ../../common/base.jade
+block tituloEncabezado 
+	Buscar Usuarios
+block migadepain1 
+	Administracion
+block migadepain2 
+	Usuarios
+block titulo1 
+	Usuario
+block titulo2 
+	Listar Usuarios
+block contenido 
+	div
+	table#dataTables-example.table.table-striped.table-bordered.table-hover(width='100%')
+	thead
+		tr
+		th Documento ID
+		th Nombre
+		th Correo Electronico
+		th Telefono
+	tbody
+		tr.odd.gradeX
+		td 
+		td 
+		td 
+		td.center
+			a.edit(href="/usuarios/editar", data-toggle='tooltip', title='Editar Registro')
+			i.fa.fa-edit(style='font-size: 24px; color: #337ab7;')
+			a.delete(href="/usuarios/eliminarfrom", data-toggle='tooltip', title='Eliminar Registro')
+			i.fa.fa-remove(style='font-size: 24px; color: red')
+			
+	a(href="/usuarios/nuevo", data-toggle='tooltip', title='Adicionar Registro')
+	i.fa.fa-plus(style='font-size: 48px; color: #337ab7;')
