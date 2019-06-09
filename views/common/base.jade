@@ -1,8 +1,7 @@
 doctype html
-html(th:lang='es', xmlns:th='http://www.thymeleaf.org', xmlns='http://www.w3.org/1999/xhtml')
+html(th:lang='es', xmlns='http://www.w3.org/1999/xhtml')
   head
-    title 
-       block tituloEncabezado
+    title block tituloEncabezado
   body
     include encabezado.jade
     #wrapper
@@ -12,19 +11,14 @@ html(th:lang='es', xmlns:th='http://www.thymeleaf.org', xmlns='http://www.w3.org
           nav(aria-label='breadcrumb')
             ol.breadcrumb
               li.breadcrumb-item
-                a(href='#') 
-                block migadepain1
-              li.breadcrumb-item.active(aria-current='page') 
-              block migadepain2
+                a(href='#') block migadepain1
+              li.breadcrumb-item.active(aria-current='page') block migadepain2
           .col-lg-12
-            h1.page-header 
-              block titulo1
+            h1.page-header block titulo1
         .row
           .col-lg-12
             .panel.panel-default
-              .panel-heading 
-              block titulo2
+              .panel-heading block titulo2
               // /.panel-heading
-              .panel-body
-                block contenido
+              .panel-body block contenido
       //include footer.jade
